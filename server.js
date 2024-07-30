@@ -10,13 +10,15 @@ const port = 3000;
 const db = mysql.createConnection({
     host: 'mysqlc',
     user: 'root', // Cambia esto si es necesario
-    password: 'root', // Cambia esto si es necesario
+    password: '', // Cambia esto si es necesario
     database: 'mycrud'
 });
 
 db.connect(err => {
     if (err) {
+        console.log("error al conectarse con el contenedor");
         throw err;
+        
     }
     console.log('Conectado a la base de datos');
 });
