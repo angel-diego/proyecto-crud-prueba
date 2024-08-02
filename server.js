@@ -8,7 +8,7 @@ const port = 3000;
 
 // Configura la conexión a la base de datos
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'mysqlc',  //'localhost',
     user: 'root', // Cambia esto si es necesario
     password: 'root', // Cambia esto si es necesario
     database: 'mycrud',
